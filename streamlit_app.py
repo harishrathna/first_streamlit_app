@@ -16,7 +16,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')--# the mutli value will was set
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado', 'Strawberries'])-----# gives the first value in the column 
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado', 'Strawberries']) # gives the first value in the column 
 
 # Display the table on the page.
 streamlit.dataframe(my_fruit_list)
